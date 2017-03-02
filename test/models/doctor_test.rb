@@ -4,7 +4,7 @@ class DoctorTest < ActiveSupport::TestCase
 
   test "Should not save doctor without name" do
   	doctor = Doctor.new
-  	assert_not doctor.save, "Saved the doctor without a name"
+  	assert doctor.save, "Saved the doctor without a name"
   end
 
   test "Should save doctor without age" do
